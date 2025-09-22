@@ -33,6 +33,10 @@ output "vm_instance_name" {
   value       = google_compute_instance.vsocket.name
 }
 
+output "vm_instance_id" { 
+  value = google_compute_instance.vsocket.id
+}
+
 # output "vm_instance_self_link" {
 #   description = "Self-link for the VM instance"
 #   value       = google_compute_instance.vsocket.self_link
